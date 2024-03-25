@@ -2,7 +2,7 @@
 
 # Quill ImageResize Module
 
-A module for Quill rich text editor to allow images to be resized.
+A module for Quill rich text editor to allow images to be resized. This will allow images to be resized in mobile and will unfocus on scroll so that resize box does not cause issues.
 
 Also see [quill-image-drop-module](https://github.com/kensnyder/quill-image-drop-module),
 a module that enables copy-paste and drag/drop for Quill.
@@ -17,7 +17,7 @@ a module that enables copy-paste and drag/drop for Quill.
 
 ```javascript
 import Quill from 'quill';
-import { ImageResize } from 'quill-image-resize-module';
+import ImageResize from '@ammarkhalidfarooq/quill-image-resize-module-react-fix-for-mobile';
 
 Quill.register('modules/imageResize', ImageResize);
 
