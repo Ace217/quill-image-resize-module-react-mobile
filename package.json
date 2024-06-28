@@ -1,6 +1,6 @@
 {
   "name": "@ammarkhalidfarooq/quill-image-resize-module-react-fix-for-mobile",
-  "version": "3.1.2",
+  "version": "3.2.2",
   "description": "A module for Quill rich text editor to allow images to be resized (with react fixes for mobile devices).",
   "main": "image-resize.min.js",
   "scripts": {
@@ -45,11 +45,11 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "file-loader": "^6.2.0",
     "webpack": "^2.7.0"
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "quill": "^1.2.2",
-    "raw-loader": "^0.5.1"
+    "quill": "^1.2.2"
   }
 }

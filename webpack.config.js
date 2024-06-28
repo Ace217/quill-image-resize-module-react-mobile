@@ -6,7 +6,7 @@ module.exports = {
         path: __dirname,
         library: 'ImageResize',
         libraryTarget: 'umd',
-        filename: "image-resize.min.js"
+        filename: "image-resize.min.js",
     },
     module: {
         rules: [
@@ -18,16 +18,21 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         "presets": [["es2015", { "modules": false }]],
-                        "plugins": ["babel-plugin-transform-class-properties"]
-                    }
-                }]
+                        "plugins": ["babel-plugin-transform-class-properties"],
+                    },
+                }],
             },
             {
                 test: /\.svg$/,
                 use: [{
-                    loader: 'raw-loader'
-                }]
-            }
-        ]
-    }
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'assets/',
+                        emitFile: false,
+                    },
+                }],
+            },
+        ],
+    },
 };
